@@ -1,0 +1,20 @@
+<%- include('includes/header.ejs') %>
+<h1>compose</h1>
+
+<form  action="/home" method="post">
+    
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control"  id="title" name="postTitle" >
+          
+        </div>
+        <div class="form-group">
+            <label for="post">Post</label>
+            <textarea name="postBody" class="form-control" id="post" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" name="button">Publish</button>
+</form>
+
+
+
+<%- include('includes/footer.ejs') %>

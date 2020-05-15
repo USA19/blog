@@ -1,0 +1,17 @@
+<%- include('includes/header.ejs') %>
+
+
+<%for(let i=0;i<startingContent.length ; i++){ %>
+
+<h1> <%= startingContent[i].title %> </h1>
+<p>  <%= startingContent[i].post.substring(0,100) %>  </p>
+<a href="/posts/<%= startingContent[i].title %>"  > read more</a>
+<%}%>
+
+
+
+
+<%- include('includes/footer.ejs') %>
+
+
+
